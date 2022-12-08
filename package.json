@@ -1,7 +1,7 @@
 {
-  "name": "inotes-backend",
+  "name": "inotes_api",
   "version": "1.0.0",
-  "description": "inotes-backend,our backend part of our app,can help with creates with react.",
+  "description": "inotes_api, a REST API, basically can help the users as after the login, its providing a unique token, so this unique token have all the info about login users,Then users can perform CRUD operations on perticuluar their notes. ",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.2",

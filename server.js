@@ -2,9 +2,11 @@
 require('dotenv').config();
 require('./db'); //Connect to database
 const express = require('express');
+const cors = require('cors')
 const app = express();
 
 //----Check the app is work with urls
+app.use(cors()) //To use to work with frontend api
 app.use(express.json());
 app.use(express.urlencoded({extended : false}));
 
